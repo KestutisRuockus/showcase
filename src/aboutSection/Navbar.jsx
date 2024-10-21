@@ -1,12 +1,8 @@
 import { useState } from "react";
 import SquareAnimation from "../utils/SquareAnimation";
+import links from "../data/navbarLinks.json"
 
 export default function Navbar() {
-  let Links = [
-    { name: "About", link: "#about" },
-    { name: "Portfolio", link: "#portfolio" },
-    { name: "Contacts", link: "#contacts" },
-  ];
 
   let [open, setOpen] = useState(false);
 
@@ -35,7 +31,7 @@ export default function Navbar() {
             open ? "top-0" : "top-[-490px]"
           }`}
       >
-        {Links.map((link) => (
+        {links.map((link) => (
           <li
             className="hover:text-black duration-300 sm:hover:scale-125 cursor-pointer text-xl text-start pl-2 font-bold"
             key={link.name}
