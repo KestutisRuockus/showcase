@@ -2,6 +2,13 @@ import { useState } from "react";
 import SquareAnimation from "../utils/SquareAnimation";
 import links from "../data/navbarLinks.json"
 
+const scrollToId = (id) => {
+  const element = document.getElementById(id);
+  if( element ) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 export default function Navbar() {
 
   let [open, setOpen] = useState(false);
@@ -33,10 +40,11 @@ export default function Navbar() {
       >
         {links.map((link) => (
           <li
+          onClick={() => scrollToId(link.link)}
             className="hover:text-black duration-300 sm:hover:scale-125 cursor-pointer text-xl text-start pl-2 font-bold"
             key={link.name}
           >
-            <a href={link.link}>{link.name}</a>
+            {link.name}
           </li>
         ))}
       </ul>

@@ -6,7 +6,7 @@ const IconComesFromFontAwesome = ({ tech }) => {
     return (
         <div className="flex flex-col items-center w-16">
             <i className={`${tech.icon} text-6xl`} style={{color: tech.color}}></i>
-            <span className="text-xs mt-2">{tech.name}</span>
+            <span className="text-white mt-4">{tech.name}</span>
         </div>
     )
 }
@@ -20,7 +20,7 @@ const IconComesFromUrl = ({ tech }) => {
           alt={tech.name}
           style={{width: tech.width}}
         />
-        <span className="text-xs mt-2">{tech.name}</span>
+        <span className="text-white mt-4">{tech.name}</span>
       </div>
     )
 }
