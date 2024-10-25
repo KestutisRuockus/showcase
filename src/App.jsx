@@ -1,5 +1,6 @@
 import About from "./aboutSection/About";
 import Contacts from "./contacts/Contacts";
+import Projects from "./projectsSection/Projects";
 import TechStack from "./techStack/TechStack";
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
       <About />
       <TechStack />
       <Contacts />
+      <Projects />
     </div>
   );
 }
