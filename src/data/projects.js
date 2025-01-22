@@ -1,8 +1,8 @@
 // E-Shop demo images
-import friendfeed1 from "../assets/friendFeed/friendFeed1.png";
-import friendfeed2 from "../assets/friendFeed/friendFeed2.png";
-import friendfeed3 from "../assets/friendFeed/friendFeed3.png";
-import friendfeed4 from "../assets/friendFeed/friendFeed4.png";
+import friendFeedLogin from "../assets/friendFeed/FriendFeed-login.png";
+import friendfeedHomePage from "../assets/friendFeed/FriendFeed-home-page.png";
+import friendfeedCreatePost from "../assets/friendFeed/FriendFeed-create-post.png";
+import friendfeedResponsiveDesign from "../assets/friendFeed/FriendFeed-responsive-design.png";
 
 // E-Shop demo images
 import eShop1 from "../assets/eshop/e-shop-1.png";
@@ -26,8 +26,13 @@ export const projectsData = [
   {
     name: "FriendFeed",
     description:
-      "App to share posts of thoughts or photos to the society. STILL IN DEVELOPMENT PROCESS",
-    images: [friendfeed1, friendfeed2, friendfeed3, friendfeed4],
+      "FriendFeed is a social media platform where users can connect, share, and engage with others through posts and messages. This project challenges the boundaries of typical CRUD applications by integrating real-time data, user authentication, and a conversation management system.",
+    images: [
+      friendFeedLogin,
+      friendfeedHomePage,
+      friendfeedCreatePost,
+      friendfeedResponsiveDesign,
+    ],
     netlify: "https://friendfeed.netlify.app/",
     github: "https://github.com/KestutisRuockus/FriendsFeed",
     techStack: [

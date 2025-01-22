@@ -52,8 +52,13 @@ export default function Developer() {
             <div className="absolute max-[460px]:left-[-8px] max-[460px]:top-[-28px] left-[-60px] top-0 text-rose-700 text-xl font-bold">
               &lt;p&gt;
             </div>
-            I’m an enthusiastic front-end developer passionate about creating interactive and visually engaging web experiences. 
-            I love solving challenges and turning creative ideas into functional, responsive designs with clean code. My goal is to enhance user experience and contribute to positive social change.
+            Passionate Front-End Developer with strong expertise in JavaScript,
+            React, and CSS. I specialize in creating responsive, user-friendly
+            web applications that deliver seamless performance. With a keen eye
+            for design and detail, I enjoy transforming ideas into functional
+            user interfaces. Eager to learn and thrive in collaborative
+            environments, I am committed to building intuitive and engaging
+            digital experiences.
             <span className="text-rose-700 text-xl ml-4 font-bold">
               &lt;/p&gt;
             </span>
