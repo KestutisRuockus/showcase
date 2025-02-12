@@ -1,52 +1,71 @@
-import contacts from '../data/contacts.json'
+import { useState } from "react";
+import contacts from "../data/contacts.json";
 
 const Contacts = () => {
+  const [emailIsCopied, setEmailIscopied] = useState(false);
 
-    return (
-        <div
-        id='contacts'
-          className="text-white text-md flex lg:flex-row flex-col flex-wrap justify-center gap-8 bg-grayishBlue bg-opacity-50 w-4/5 mt-14 px-5 py-14 rounded-md
-         shadow-xl shadow-darkTaupe font-bold relative mb-20"
+  const copyEmailOnClick = (email) => {
+    navigator.clipboard.writeText(email);
+    setEmailIscopied(true);
+
+    setTimeout(() => {
+      setEmailIscopied(false);
+    }, 2000);
+  };
+
+  return (
+    <section
+      id="contacts"
+      className="text-white text-md flex lg:flex-row flex-col flex-wrap justify-center gap-8 bg-grayishBlue bg-opacity-50 sm:w-4/5 w-11/12 mt-14 px-5 py-14 rounded-md
+         shadow-xl shadow-darkTaupe font-bold relative"
+    >
+      <div className="absolute left-4 top-4 text-white text-lg underline underline-offset-1 cursor-default">
+        Contacts
+      </div>
+
+      {/* Email */}
+      <div className="flex flex-wrap relative">
+        <h3 className="text-lg text-slate-400 w-1/12 ">Email:</h3>
+        <p
+          onClick={() => copyEmailOnClick(contacts.email)}
+          className="break-all w-full text-lg cursor-pointer"
         >
-          <div className="absolute left-4 top-4 text-white text-lg underline underline-offset-1 cursor-default">
-            Contacts
-          </div>
-          
-          {/* Email */}
-          <div className="flex flex-wrap">
-              <h3 className="text-lg text-slate-400 w-1/12 ">Email:</h3>
-              <p
-                className="break-all w-full text-lg"
-              >
-                {contacts.email}
-              </p>
-            </div>
-
-            {/* Github */}
-          <div className="flex flex-wrap">
-              <h3 className="text-lg text-slate-400 w-1/12 ">Github:</h3>
-              <a
-                href={contacts.github}
-                target="_blank"
-                className="break-all w-full text-lg"
-              >
-                {contacts.github}
-              </a>
-            </div>
-
-            {/* LinkedIn */}
-          <div className="flex flex-wrap">
-              <h3 className="text-lg text-slate-400 w-1/12">LinkedIn:</h3>
-              <a
-                href={contacts.linkedin}
-                target="_blank"
-                className="break-all w-full text-lg"
-              >
-                {contacts.linkedin}
-              </a>
-            </div>
+          {contacts.email}
+        </p>
+        <div
+          className={`${
+            emailIsCopied ? "opacity-100" : "opacity-0"
+          } absolute -bottom-5 left-0 text-sm text-green-600 cursor-default transition-opacity duration-300`}
+        >
+          Email was copied!
         </div>
-      );
-}
+      </div>
 
-export default Contacts
+      {/* Github */}
+      <div className="flex flex-wrap">
+        <h3 className="text-lg text-slate-400 w-1/12 ">Github:</h3>
+        <a
+          href={contacts.github}
+          target="_blank"
+          className="break-all w-full text-lg"
+        >
+          {contacts.github}
+        </a>
+      </div>
+
+      {/* LinkedIn */}
+      <div className="flex flex-wrap">
+        <h3 className="text-lg text-slate-400 w-1/12">LinkedIn:</h3>
+        <a
+          href={contacts.linkedin}
+          target="_blank"
+          className="break-all w-full text-lg"
+        >
+          {contacts.linkedin}
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default Contacts;

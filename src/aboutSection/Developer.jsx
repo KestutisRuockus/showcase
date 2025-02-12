@@ -1,5 +1,5 @@
 import personImg from "../assets/person.jpg";
-
+import description from "../data/developerText.json";
 export default function Developer() {
   return (
     <div
@@ -30,9 +30,8 @@ export default function Developer() {
             src={personImg}
             alt="person"
             width={300}
-            height={400}
           />
-          <span className="absolute max-[460px]:left-[-24px] max-[460px]:bottom-[-28px] right-[-70px] bottom-[-2px] text-rose-700 text-xl font-bold">
+          <span className="absolute max-[460px]:left-[-24px] max-[460px]:bottom-[-28px] right-[-70px] bottom-[-2px] text-rose-700 text-xl font-bold w-fit">
             &lt;/img&gt;
           </span>
         </div>
@@ -52,13 +51,7 @@ export default function Developer() {
             <div className="absolute max-[460px]:left-[-8px] max-[460px]:top-[-28px] left-[-60px] top-0 text-rose-700 text-xl font-bold">
               &lt;p&gt;
             </div>
-            Passionate Front-End Developer with strong expertise in JavaScript,
-            React, and CSS. I specialize in creating responsive, user-friendly
-            web applications that deliver seamless performance. With a keen eye
-            for design and detail, I enjoy transforming ideas into functional
-            user interfaces. Eager to learn and thrive in collaborative
-            environments, I am committed to building intuitive and engaging
-            digital experiences.
+            {description.about}
             <span className="text-rose-700 text-xl ml-4 font-bold">
               &lt;/p&gt;
             </span>

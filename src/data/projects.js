@@ -26,7 +26,7 @@ export const projectsData = [
   {
     name: "FriendFeed",
     description:
-      "FriendFeed is a social media platform where users can connect, share, and engage with others through posts and messages. This project challenges the boundaries of typical CRUD applications by integrating real-time data, user authentication, and a conversation management system.",
+      "An application with Firebase authentication that allows users to log in using email and password, with login state remembered until the user logs out. It includes a profile editing feature where users can update their information and profile picture. Users can create, edit, and delete posts, including images that are automatically compressed for optimized storage. Posts can only be edited or deleted by their author, while other users can comment and react with 'like' or 'dislike'. Comments can be edited only by their author, but both the comment and post authors can delete them. The app also integrates a dynamic messaging system that adjusts the number of active chat windows based on screen size. Remaining conversations are moved to a dropdown list, making it easier to manage. Selecting a chat from the list activates the chat and opens the messaging interface.",
     images: [
       friendFeedLogin,
       friendfeedHomePage,
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     name: "Clothes E-Shop",
     description:
-      "Explore the latest trends and timeless classics at StyleHub, where fashion meets convenience. Our e-shop offers a diverse range of clothing for men, women, and kids, including everything from chic casual wear to elegant formal attire. With easy navigation, detailed product descriptions, and high-quality images, finding your perfect outfit has never been easier. Enjoy a seamless shopping experience with secure payment options and fast, reliable shipping. Stay stylish, stay confident with StyleHub",
+      "An e-commerce application that enables users to browse a clothing catalog by categories and subcategories. Key functionalities include product search, filtering, and a shopping cart, with cart data persisted in localStorage for continuity across page reloads. A checkout form collects order details, and all product information is stored in a JSON file for easy management and future scalability.",
     images: [eShop1, eShop2, eShop3, eShop4],
     netlify: "https://clothes-e-shop.netlify.app/",
     github: "https://github.com/KestutisRuockus/clothes-e-shop",
@@ -91,7 +91,7 @@ export const projectsData = [
   {
     name: "Movies Discovery",
     description:
-      "The Movie Database (TMDB) is a community built movie and TV database. Every piece of data has been added by our amazing community dating back to 2008. TMDB's strong international focus and breadth of data is largely unmatched and something we're incredibly proud of. Put simply, we live and breathe community and that's precisely what makes us different.",
+      "An online application that enables users to discover and browse a movie catalog using the TMDB (The Movie Database) API. The app features genre-based search and provides lists of top-rated, popular, and upcoming movies. Users can save their favorite movies for later access. The movie data is dynamically processed and displayed, ensuring a fast and seamless browsing experience.",
     images: [tmdb1, tmdb2, tmdb3, tmdb4],
     netlify: "https://tmdb-discovery.netlify.app/",
     github: "https://github.com/KestutisRuockus/TMDB",
@@ -116,7 +116,7 @@ export const projectsData = [
   {
     name: "Infinite Scroll",
     description:
-      "Infinite Scroll, load more images when bottom of screen reached. Fetch people posted photos and mark which photos is yuor most favorites",
+      "An application that uses the Flickr API and implements lazy loading (infinite scroll) for a smooth browsing experience. Images are loaded only when the user scrolls down, dynamically fetching new photos as needed, which optimizes performance and reduces unnecessary server requests. Users can mark images as favorites, which are saved and displayed in the 'My Favorite List' section for easy access.",
     images: [scroll1, scroll2, scroll3, scroll4],
     netlify: "https://infinite-scroll-react-typescript.netlify.app/",
     github: "https://github.com/KestutisRuockus/assignment",
