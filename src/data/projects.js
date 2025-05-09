@@ -1,4 +1,16 @@
-// E-Shop demo images
+// Fade & Blade barbers saloon demo images
+import fadeAndBlade1 from "../assets/fadeAndBlade/fadeAndBlade1.png";
+import fadeAndBlade2 from "../assets/fadeAndBlade/fadeAndBlade2.png";
+import fadeAndBlade3 from "../assets/fadeAndBlade/fadeAndBlade3.png";
+import fadeAndBlade4 from "../assets/fadeAndBlade/fadeAndBlade4.png";
+
+// Estate landing page demo images
+import estate1 from "../assets/estate/estate1.png";
+import estate2 from "../assets/estate/estate2.png";
+import estate3 from "../assets/estate/estate3.png";
+import estate4 from "../assets/estate/estate4.png";
+
+// FriendFeed demo images
 import friendFeedLogin from "../assets/friendFeed/FriendFeed-login.png";
 import friendfeedHomePage from "../assets/friendFeed/FriendFeed-home-page.png";
 import friendfeedCreatePost from "../assets/friendFeed/FriendFeed-create-post.png";
@@ -24,9 +36,59 @@ import scroll4 from "../assets/infiniteScroll/scroll-4.png";
 
 export const projectsData = [
   {
+    name: "✂️ Fade & Blade Barbers",
+    description:
+      "A sleek barbershop appointment system that simulates a modern grooming experience. This app features smooth UI interactions, dynamic selections, and thoughtful validation. \n\n Key Features: \n · Book appointments with available barbers. \n · Select services, time, and date. \n · Clean and focused modal design.",
+    images: [fadeAndBlade1, fadeAndBlade2, fadeAndBlade3, fadeAndBlade4],
+    netlify: "https://fade-and-blade.netlify.app/",
+    github: "https://github.com/KestutisRuockus/barber-saloon",
+    techStack: [
+      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+      {
+        name: "Typescript",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+      },
+      {
+        name: "Tailwind",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+    ],
+  },
+  {
+    name: "Estate landing page",
+    description:
+      "A modern, responsive landing page for a real estate business. This single-page application is designed to showcase key information, highlight recent projects, and provide an easy way for potential clients to get in touch. \n\n Key Features: \n · Highlights recent projects and business offerings. \n · Clean, modern, and responsive design. \n · User-friendly contact options.",
+    images: [estate1, estate2, estate3, estate4],
+    netlify: "https://landing-page-real-estate.netlify.app/",
+    github: "https://github.com/KestutisRuockus/real-estate",
+    techStack: [
+      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+      {
+        name: "Typescript",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+      },
+      {
+        name: "Tailwind",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+    ],
+  },
+  {
     name: "FriendFeed",
     description:
-      "An application with Firebase authentication that allows users to log in using email and password, with login state remembered until the user logs out. It includes a profile editing feature where users can update their information and profile picture. Users can create, edit, and delete posts, including images that are automatically compressed for optimized storage. Posts can only be edited or deleted by their author, while other users can comment and react with 'like' or 'dislike'. Comments can be edited only by their author, but both the comment and post authors can delete them. The app also integrates a dynamic messaging system that adjusts the number of active chat windows based on screen size. Remaining conversations are moved to a dropdown list, making it easier to manage. Selecting a chat from the list activates the chat and opens the messaging interface.",
+      "A social media app with Firebase authentication. Users can log in, create, edit, and delete posts, interact with comments, and chat with others. \n\n Key Features: \n · Firebase authentication with email/password login. \n · Create, edit, and delete posts with images. \n · Dynamic messaging system with responsive design.",
     images: [
       friendFeedLogin,
       friendfeedHomePage,
@@ -36,7 +98,6 @@ export const projectsData = [
     netlify: "https://friendfeed.netlify.app/",
     github: "https://github.com/KestutisRuockus/FriendsFeed",
     techStack: [
-      { name: "JS", icon: "fa-brands fa-js", color: "text-yellow-400" },
       { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
       {
         name: "Typescript",
@@ -45,7 +106,6 @@ export const projectsData = [
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
-      { name: "CSS", icon: "fa-brands fa-css3-alt", color: "text-blue-600" },
       {
         name: "Tailwind",
         icon: "",
@@ -64,12 +124,11 @@ export const projectsData = [
   {
     name: "Clothes E-Shop",
     description:
-      "An e-commerce application that enables users to browse a clothing catalog by categories and subcategories. Key functionalities include product search, filtering, and a shopping cart, with cart data persisted in localStorage for continuity across page reloads. A checkout form collects order details, and all product information is stored in a JSON file for easy management and future scalability.",
+      "An e-commerce app for browsing a clothing catalog, with product search, filtering, shopping cart, and checkout. Data is saved to localStorage for continuity. \n\n Key Features: \n · Browse by product categories and subcategories. \n · Search and filter products. \n · Persistent shopping cart with localStorage.",
     images: [eShop1, eShop2, eShop3, eShop4],
     netlify: "https://clothes-e-shop.netlify.app/",
     github: "https://github.com/KestutisRuockus/clothes-e-shop",
     techStack: [
-      { name: "JS", icon: "fa-brands fa-js", color: "text-yellow-400" },
       { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
       {
         name: "Typescript",
@@ -78,7 +137,6 @@ export const projectsData = [
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
-      { name: "CSS", icon: "fa-brands fa-css3-alt", color: "text-blue-600" },
       {
         name: "Tailwind",
         icon: "",
@@ -91,7 +149,7 @@ export const projectsData = [
   {
     name: "Movies Discovery",
     description:
-      "An online application that enables users to discover and browse a movie catalog using the TMDB (The Movie Database) API. The app features genre-based search and provides lists of top-rated, popular, and upcoming movies. Users can save their favorite movies for later access. The movie data is dynamically processed and displayed, ensuring a fast and seamless browsing experience.",
+      "An app for discovering movies using the TMDB API. Users can browse by genre, view top-rated and popular movies, and save favorites. \n\n Key Features: · Browse movies by genre and popularity. \n · Save favorite movies for later viewing. \n · Fast, dynamic content loading.",
     images: [tmdb1, tmdb2, tmdb3, tmdb4],
     netlify: "https://tmdb-discovery.netlify.app/",
     github: "https://github.com/KestutisRuockus/TMDB",
@@ -116,12 +174,11 @@ export const projectsData = [
   {
     name: "Infinite Scroll",
     description:
-      "An application that uses the Flickr API and implements lazy loading (infinite scroll) for a smooth browsing experience. Images are loaded only when the user scrolls down, dynamically fetching new photos as needed, which optimizes performance and reduces unnecessary server requests. Users can mark images as favorites, which are saved and displayed in the 'My Favorite List' section for easy access.",
+      "An app that uses the Flickr API and implements infinite scrolling for a smooth image browsing experience. Users can favorite images and view them later. \n\n Key Features: \n · Lazy loading for optimal performance. \n · Mark and save favorite images. \n · Dynamic photo loading as you scroll.",
     images: [scroll1, scroll2, scroll3, scroll4],
     netlify: "https://infinite-scroll-react-typescript.netlify.app/",
     github: "https://github.com/KestutisRuockus/assignment",
     techStack: [
-      { name: "JS", icon: "fa-brands fa-js", color: "text-yellow-400" },
       { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
       {
         name: "Typescript",

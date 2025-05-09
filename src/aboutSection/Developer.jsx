@@ -51,7 +51,7 @@ export default function Developer() {
             <div className="absolute max-[460px]:left-[-8px] max-[460px]:top-[-28px] left-[-60px] top-0 text-rose-700 text-xl font-bold">
               &lt;p&gt;
             </div>
-            {description.about}
+            <span style={{ whiteSpace: "pre-line" }}>{description.about}</span>
             <span className="text-rose-700 text-xl ml-4 font-bold">
               &lt;/p&gt;
             </span>

@@ -100,7 +100,10 @@ export default function ProjectCard({ project, even }) {
           <ProjectsImagesCarousel images={project.images} />
         </div>
         <div className="lg:w-1/2 w-full flex flex-col gap-8">
-          <div className="text-white h-40 w-full overflow-y-scroll border-4 border-[#615545] p-4 rounded-md">
+          <div
+            style={{ whiteSpace: "pre-line" }}
+            className="text-white h-40 w-full overflow-y-scroll border-4 border-[#615545] p-4 rounded-md"
+          >
             {project.description}
           </div>
           {generateUsedTechStackList(project.techStack)}
