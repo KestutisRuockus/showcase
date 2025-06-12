@@ -1,3 +1,9 @@
+// CryptoMania demo images
+import cryptoMania1 from "../assets/cryptoMania/cryptomania-1.png";
+import cryptoMania2 from "../assets/cryptoMania/cryptomania-2.png";
+import cryptoMania3 from "../assets/cryptoMania/cryptomania-3.png";
+import cryptoMania4 from "../assets/cryptoMania/cryptomania-4.png";
+
 // Fade & Blade barbers saloon demo images
 import fadeAndBlade1 from "../assets/fadeAndBlade/fadeAndBlade1.png";
 import fadeAndBlade2 from "../assets/fadeAndBlade/fadeAndBlade2.png";
@@ -36,12 +42,83 @@ import scroll4 from "../assets/infiniteScroll/scroll-4.png";
 
 export const projectsData = [
   {
+    name: "₿ CryptoMania",
+    description:
+      "A sleek cryptocurrency explorer that brings global coin data to your fingertips. This app features smooth UI transitions, intuitive search and filtering, and a responsive modal-based details view. \n \n Key Features: \n· Browse and search cryptocurrencies from around the world. \n· View real-time pricing, trends, and historical charts. \n· Save favorite coins and revisit them anytime. \n· Switch currencies, paginate results, and explore trending data — all with ease.",
+    images: [cryptoMania1, cryptoMania2, cryptoMania3, cryptoMania4],
+    netlify: "https://calm-shortbread-41b583.netlify.app/",
+    github: "https://github.com/KestutisRuockus/cryptomania",
+    techStack: [
+      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+      {
+        name: "Typescript",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+      },
+      {
+        name: "Tailwind",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Vite",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg",
+      },
+      {
+        name: "Axios",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d1/Axios_%28computer_library%29_logo.svg",
+      },
+      {
+        name: "Rest-API",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://img.icons8.com/?size=100&id=55497&format=png&color=000000",
+      },
+    ],
+  },
+  {
     name: "✂️ Fade & Blade Barbers",
     description:
       "A sleek barbershop appointment system that simulates a modern grooming experience. This app features smooth UI interactions, dynamic selections, and thoughtful validation. \n\n Key Features: \n · Book appointments with available barbers. \n · Select services, time, and date. \n · Clean and focused modal design.",
     images: [fadeAndBlade1, fadeAndBlade2, fadeAndBlade3, fadeAndBlade4],
     netlify: "https://fade-and-blade.netlify.app/",
     github: "https://github.com/KestutisRuockus/barber-saloon",
+    techStack: [
+      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+      {
+        name: "Typescript",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+      },
+      {
+        name: "Tailwind",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+    ],
+  },
+  {
+    name: "Clothes E-Shop",
+    description:
+      "An e-commerce app for browsing a clothing catalog, with product search, filtering, shopping cart, and checkout. Data is saved to localStorage for continuity. \n\n Key Features: \n · Browse by product categories and subcategories. \n · Search and filter products. \n · Persistent shopping cart with localStorage.",
+    images: [eShop1, eShop2, eShop3, eShop4],
+    netlify: "https://clothes-e-shop.netlify.app/",
+    github: "https://github.com/KestutisRuockus/clothes-e-shop",
     techStack: [
       { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
       {
@@ -118,31 +195,6 @@ export const projectsData = [
         icon: "",
         color: "",
         imgUrl: "https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg",
-      },
-    ],
-  },
-  {
-    name: "Clothes E-Shop",
-    description:
-      "An e-commerce app for browsing a clothing catalog, with product search, filtering, shopping cart, and checkout. Data is saved to localStorage for continuity. \n\n Key Features: \n · Browse by product categories and subcategories. \n · Search and filter products. \n · Persistent shopping cart with localStorage.",
-    images: [eShop1, eShop2, eShop3, eShop4],
-    netlify: "https://clothes-e-shop.netlify.app/",
-    github: "https://github.com/KestutisRuockus/clothes-e-shop",
-    techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
-      {
-        name: "Typescript",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
-      },
-      {
-        name: "Tailwind",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
     ],
   },
