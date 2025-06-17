@@ -1,3 +1,9 @@
+// E commerce website demo images
+import eCommerceWebsite1 from "../assets/eCommerceWebsite/image1.png";
+import eCommerceWebsite2 from "../assets/eCommerceWebsite/image2.png";
+import eCommerceWebsite3 from "../assets/eCommerceWebsite/image3.png";
+import eCommerceWebsite4 from "../assets/eCommerceWebsite/image4.png";
+
 // CryptoMania demo images
 import cryptoMania1 from "../assets/cryptoMania/cryptomania-1.png";
 import cryptoMania2 from "../assets/cryptoMania/cryptomania-2.png";
@@ -41,6 +47,57 @@ import scroll3 from "../assets/infiniteScroll/scroll-3.png";
 import scroll4 from "../assets/infiniteScroll/scroll-4.png";
 
 export const projectsData = [
+  {
+    name: "E-Commerce-website",
+    description:
+      "fully functional ecommerce platform using modern web technologies such as Next.js 15, Tailwind CSS v4, Stripe for payments, and Zustand for state management. This project focuses on building a sleek, responsive frontend with a secure payment flow. \n \n Key Features: \n· Auto‑cycling carousel that showcases your top products. \n· View real-time pricing, trends, and historical charts. \n· Interactive plus/minus buttons to adjust item quantities in the cart. \n· A live-updating cart icon in the navbar using Zustand. \n· A secure checkout process powered by Stripe's API.",
+    images: [
+      eCommerceWebsite1,
+      eCommerceWebsite2,
+      eCommerceWebsite3,
+      eCommerceWebsite4,
+    ],
+    netlify:
+      "https://e-commerce-website-liaf9rf3p-kestutis-projects-4aa09958.vercel.app/",
+    github: "https://github.com/KestutisRuockus/e-commerce-website",
+    techStack: [
+      {
+        name: "Next.js",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s",
+      },
+      {
+        name: "Typescript",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+      },
+      {
+        name: "Tailwind",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Zustand",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHj4UwTW4ANSlNjzQOiiOqfDa6kal9RpF0A&s",
+      },
+      {
+        name: "Stripe",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://download.logo.wine/logo/Stripe_(company)/Stripe_(company)-Logo.wine.png",
+      },
+    ],
+  },
   {
     name: "₿ CryptoMania",
     description:
