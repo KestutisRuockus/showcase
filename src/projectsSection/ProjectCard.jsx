@@ -39,12 +39,22 @@ export default function ProjectCard({ project, even }) {
   };
 
   const CreateFontAwesomeIcon = ({ item }) => {
-    return <i className={`${item.icon} text-5xl ${item.color}`} />;
+    return (
+      <div className="h-8 flex items-center justify-center">
+        <i className={`${item.icon} text-3xl ${item.color}`} />
+      </div>
+    );
   };
 
   const CreateIconFromUrl = ({ item }) => {
     return (
-      <img src={item.imgUrl} alt={item.name} className="mb-1" width={42} />
+      <div className="h-8 flex items-center justify-center">
+        <img
+          src={item.imgUrl}
+          alt={item.name}
+          className="h-7 w-7 object-contain"
+        />
+      </div>
     );
   };
 
@@ -57,16 +67,15 @@ export default function ProjectCard({ project, even }) {
         </h1>
         <div className="bg-black/[.3] flex flex-wrap justify-center gap-2 w-fit rounded-2xl m-auto p-4">
           {arr.map((item) => (
-            <div
-              key={item.name}
-              className="flex flex-col gap-1 justify-end items-center w-16"
-            >
+            <div key={item.name} className="flex flex-col items-center w-16">
               {item.icon !== "" ? (
                 <CreateFontAwesomeIcon item={item} />
               ) : (
                 <CreateIconFromUrl item={item} />
               )}
-              <span className="text-xs text-white">{item.name}</span>
+              <span className="text-xs text-white text-center leading-tight h-8">
+                {item.name}
+              </span>
             </div>
           ))}
         </div>

@@ -43,20 +43,39 @@ export const projectsData = [
     netlify: "https://fade-and-blade.netlify.app/",
     github: "https://github.com/KestutisRuockus/barber-saloon",
     techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
       {
-        name: "Typescript",
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+        imgUrl: "",
+      },
+      {
+        name: "TypeScript",
         icon: "",
         color: "",
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         icon: "",
         color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Framer Motion",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://github-production-user-asset-6210df.s3.amazonaws.com/7850794/444000081-00d6d1c3-72c4-4c2f-a664-69da13182ffc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260102T134405Z&X-Amz-Expires=300&X-Amz-Signature=0ae25d86267034c31eb6eed4e0cdd395cbf1893d0a5b6185f86933f277e762bc&X-Amz-SignedHeaders=host",
+      },
+      {
+        name: "Font Awesome",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/5/5f/Font_Awesome_logomark_blue.svg",
       },
     ],
   },
@@ -77,7 +96,7 @@ export const projectsData = [
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         icon: "",
         color: "",
         imgUrl:
@@ -123,36 +142,18 @@ export const projectsData = [
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         icon: "",
         color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-    ],
-  },
-  {
-    name: "Estate landing page",
-    description:
-      "A modern, responsive landing page for a real estate business. This single-page application is designed to showcase key information, highlight recent projects, and provide an easy way for potential clients to get in touch. \n\n Key Features: \n · Highlights recent projects and business offerings. \n · Clean, modern, and responsive design. \n · User-friendly contact options.",
-    images: [estate1, estate2, estate3, estate4],
-    netlify: "https://landing-page-real-estate.netlify.app/",
-    github: "https://github.com/KestutisRuockus/real-estate",
-    techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
       {
-        name: "Typescript",
+        name: "React Router",
         icon: "",
         color: "",
         imgUrl:
-          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
-      },
-      {
-        name: "Tailwind",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactrouter/reactrouter-original.svg",
       },
     ],
   },
@@ -178,7 +179,7 @@ export const projectsData = [
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         icon: "",
         color: "",
         imgUrl:
@@ -189,6 +190,45 @@ export const projectsData = [
         icon: "",
         color: "",
         imgUrl: "https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg",
+      },
+      {
+        name: "React Router",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactrouter/reactrouter-original.svg",
+      },
+    ],
+  },
+  {
+    name: "Estate landing page",
+    description:
+      "A modern, responsive landing page for a real estate business. This single-page application is designed to showcase key information, highlight recent projects, and provide an easy way for potential clients to get in touch. \n\n Key Features: \n · Highlights recent projects and business offerings. \n · Clean, modern, and responsive design. \n · User-friendly contact options.",
+    images: [estate1, estate2, estate3, estate4],
+    netlify: "https://landing-page-real-estate.netlify.app/",
+    github: "https://github.com/KestutisRuockus/real-estate",
+    techStack: [
+      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+      {
+        name: "Typescript",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Framer Motion",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://github-production-user-asset-6210df.s3.amazonaws.com/7850794/444000081-00d6d1c3-72c4-4c2f-a664-69da13182ffc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260102T130011Z&X-Amz-Expires=300&X-Amz-Signature=e26d5148992dd11954245c71f230cf29861f1fec10dd48879a65031fc6a1f3e4&X-Amz-SignedHeaders=host",
       },
     ],
   },
@@ -202,7 +242,7 @@ export const projectsData = [
     techStack: [
       { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
       {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         icon: "",
         color: "",
         imgUrl:
