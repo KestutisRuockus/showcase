@@ -1,4 +1,10 @@
 // CryptoMania demo images
+import chordly1 from "../assets/chordly/chordly1.png";
+import chordly2 from "../assets/chordly/chordly2.png";
+import chordly3 from "../assets/chordly/chordly3.png";
+import chordly4 from "../assets/chordly/chordly4.png";
+
+// CryptoMania demo images
 import cryptoMania1 from "../assets/cryptoMania/cryptomania-1.png";
 import cryptoMania2 from "../assets/cryptoMania/cryptomania-2.png";
 import cryptoMania3 from "../assets/cryptoMania/cryptomania-3.png";
@@ -36,6 +42,61 @@ import tmdb4 from "../assets/tmdb/TMDB-4.png";
 
 export const projectsData = [
   {
+    name: "Chordly - SaaS ( In Development )",
+    description:
+      "Chordly is a SaaS platform for music students and teachers to connect, book lessons, and manage the learning process in one place. \n \n The platform focuses not only on lesson scheduling, but also on long-term progress tracking, practice management, and role-based dashboards for both students and teachers. \n \n The project is under active development and is built as a real-world SaaS product, currently focused on core functionality and product architecture, with UI design planned as the next development phase.",
+    images: [chordly1, chordly2, chordly3, chordly4],
+    netlify: "https://chordly-tau.vercel.app/",
+    github: "https://github.com/KestutisRuockus/chordly",
+    techStack: [
+      {
+        name: "Next.js",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s",
+      },
+      {
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+      },
+      {
+        name: "TypeScript",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Clerk",
+        icon: "",
+        color: "",
+        imgUrl:
+          "https://media.licdn.com/dms/image/v2/D4D12AQHk7xA2K3povA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1738572159215?e=2147483647&v=beta&t=lKiouTA1Lsuuqvu0ifWtyLD123G0yuc8KS4doZ8bFXk",
+      },
+      {
+        name: "Neon (PostgreSQL)",
+        icon: "",
+        color: "",
+        imgUrl: "https://neon.com/favicon/favicon.png",
+      },
+      {
+        name: "Drizzle ORM",
+        icon: "",
+        color: "",
+        imgUrl: "https://orm.drizzle.team/favicon.ico",
+      },
+    ],
+  },
+  {
     name: "✂️ Fade & Blade Barbers",
     description:
       "A sleek barbershop appointment system that simulates a modern grooming experience. This app features smooth UI interactions, dynamic selections, and thoughtful validation. \n\n Key Features: \n · Book appointments with available barbers. \n · Select services, time, and date. \n · Clean and focused modal design.",
@@ -68,7 +129,7 @@ export const projectsData = [
         icon: "",
         color: "",
         imgUrl:
-          "https://github-production-user-asset-6210df.s3.amazonaws.com/7850794/444000081-00d6d1c3-72c4-4c2f-a664-69da13182ffc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260102T134405Z&X-Amz-Expires=300&X-Amz-Signature=0ae25d86267034c31eb6eed4e0cdd395cbf1893d0a5b6185f86933f277e762bc&X-Amz-SignedHeaders=host",
+          "https://cdn.brandfetch.io/idDJv1mfrb/w/1080/h/1080/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B",
       },
       {
         name: "Font Awesome",
@@ -228,7 +289,7 @@ export const projectsData = [
         icon: "",
         color: "",
         imgUrl:
-          "https://github-production-user-asset-6210df.s3.amazonaws.com/7850794/444000081-00d6d1c3-72c4-4c2f-a664-69da13182ffc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260102T130011Z&X-Amz-Expires=300&X-Amz-Signature=e26d5148992dd11954245c71f230cf29861f1fec10dd48879a65031fc6a1f3e4&X-Amz-SignedHeaders=host",
+          "https://cdn.brandfetch.io/idDJv1mfrb/w/1080/h/1080/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B",
       },
     ],
   },
