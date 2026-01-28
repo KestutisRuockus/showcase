@@ -16,8 +16,7 @@ const Contacts = () => {
   return (
     <section
       id="contacts"
-      className="text-white text-md flex lg:flex-row flex-col flex-wrap justify-center gap-8 bg-grayishBlue bg-opacity-50 sm:w-4/5 w-11/12 mt-14 px-5 py-14 rounded-md
-         shadow-xl shadow-darkTaupe font-bold relative"
+      className="text-black text-md flex lg:flex-row flex-col flex-wrap justify-center gap-8 sm:w-4/5 w-11/12 px-5 my-8 font-semibold relative"
     >
       <div className="absolute left-4 top-4 text-white text-lg underline underline-offset-1 cursor-default">
         Contacts
@@ -28,7 +27,7 @@ const Contacts = () => {
         <h3 className="text-lg text-slate-400 w-1/12 ">Email:</h3>
         <p
           onClick={() => copyEmailOnClick(contacts.email)}
-          className="break-all w-full text-lg cursor-pointer"
+          className="break-all w-full text-base cursor-pointer"
         >
           {contacts.email}
         </p>
@@ -47,7 +46,7 @@ const Contacts = () => {
         <a
           href={contacts.github}
           target="_blank"
-          className="break-all w-full text-lg"
+          className="break-all w-full text-base"
         >
           {contacts.github}
         </a>
@@ -59,7 +58,7 @@ const Contacts = () => {
         <a
           href={contacts.linkedin}
           target="_blank"
-          className="break-all w-full text-lg"
+          className="break-all w-full text-base"
         >
           {contacts.linkedin}
         </a>

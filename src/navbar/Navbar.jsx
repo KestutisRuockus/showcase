@@ -33,8 +33,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`text-white flex justify-between gap-2 w-full px-[10%] py-4 bg-black sticky top-0 z-50 ${
-        isScrolling ? "opacity-50" : "opacity-100"
+      className={`text-white flex justify-between gap-2 w-full px-[10%] py-4 bg-gray-400 sticky top-0 z-50 ${
+        isScrolling ? "opacity-70" : "opacity-100"
       } transition-opacity duration-200 hover:opacity-100`}
     >
       <div className="flex items-center ms-2">

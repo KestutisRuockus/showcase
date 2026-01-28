@@ -4,6 +4,12 @@ import chordly2 from "../assets/chordly/chordly2.png";
 import chordly3 from "../assets/chordly/chordly3.png";
 import chordly4 from "../assets/chordly/chordly4.png";
 
+// Infinite Scroll demo images
+import fha1 from "../assets/fha/fha1.png";
+import fha2 from "../assets/fha/fha2.png";
+import fha3 from "../assets/fha/fha3.png";
+import fha4 from "../assets/fha/fha4.png";
+
 // CryptoMania demo images
 import cryptoMania1 from "../assets/cryptoMania/cryptomania-1.png";
 import cryptoMania2 from "../assets/cryptoMania/cryptomania-2.png";
@@ -44,11 +50,11 @@ export const projectsData = [
   {
     name: "Chordly - SaaS ( In Development )",
     description:
-      "Chordly is a SaaS platform for music students and teachers to connect, book lessons, and manage the learning process in one place. \n \n The platform focuses not only on lesson scheduling, but also on long-term progress tracking, practice management, and role-based dashboards for both students and teachers. \n \n The project is under active development and is built as a real-world SaaS product, currently focused on core functionality and product architecture, with UI design planned as the next development phase.",
+      "Chordly is a SaaS platform that connects music teachers and students, enabling lesson booking, progress tracking, and practice management through role-based dashboards.",
     images: [chordly1, chordly2, chordly3, chordly4],
     netlify: "https://chordly-tau.vercel.app/",
     github: "https://github.com/KestutisRuockus/chordly",
-    techStack: [
+    mainStack: [
       {
         name: "Next.js",
         icon: "",
@@ -75,153 +81,141 @@ export const projectsData = [
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
+    ],
+    supportingTech: [
+      "Clerk (Authentication)",
+      "PostgreSQL (Neon)",
+      "Drizzle ORM",
+    ],
+  },
+  {
+    name: "🖼️ Infinite Scroll Gallery",
+    description:
+      "An image browsing application that focuses on performance and user experience, featuring infinite scrolling, search functionality, and persistent favourites storage.",
+    images: [fha1, fha2, fha3, fha4],
+    netlify: "https://deluxe-cat-a2faff.netlify.app/",
+    github: "https://github.com/KestutisRuockus/fha",
+
+    mainStack: [
       {
-        name: "Clerk",
-        icon: "",
-        color: "",
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+      },
+      {
+        name: "TypeScript",
         imgUrl:
-          "https://media.licdn.com/dms/image/v2/D4D12AQHk7xA2K3povA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1738572159215?e=2147483647&v=beta&t=lKiouTA1Lsuuqvu0ifWtyLD123G0yuc8KS4doZ8bFXk",
+          "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
-        name: "Neon (PostgreSQL)",
-        icon: "",
-        color: "",
-        imgUrl: "https://neon.com/favicon/favicon.png",
+        name: "CSS",
+        icon: "fa-brands fa-css3-alt",
+        color: "text-blue-600",
       },
-      {
-        name: "Drizzle ORM",
-        icon: "",
-        color: "",
-        imgUrl: "https://orm.drizzle.team/favicon.ico",
-      },
+    ],
+
+    supportingTech: [
+      "Vite (Build Tool)",
+      "Vitest (Testing)",
+      "Pexels API (External Data)",
+      "LocalStorage (Persistent State)",
     ],
   },
   {
     name: "✂️ Fade & Blade Barbers",
     description:
-      "A sleek barbershop appointment system that simulates a modern grooming experience. This app features smooth UI interactions, dynamic selections, and thoughtful validation. \n\n Key Features: \n · Book appointments with available barbers. \n · Select services, time, and date. \n · Clean and focused modal design.",
+      "A modern barbershop appointment app that allows users to book services, select barbers, and choose available time slots through a clean and interactive UI.",
     images: [fadeAndBlade1, fadeAndBlade2, fadeAndBlade3, fadeAndBlade4],
     netlify: "https://fade-and-blade.netlify.app/",
     github: "https://github.com/KestutisRuockus/barber-saloon",
-    techStack: [
+
+    mainStack: [
       {
         name: "React",
         icon: "fa-brands fa-react",
         color: "text-blue-400",
-        imgUrl: "",
       },
       {
         name: "TypeScript",
-        icon: "",
-        color: "",
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
         name: "Tailwind CSS",
-        icon: "",
-        color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-      {
-        name: "Framer Motion",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://cdn.brandfetch.io/idDJv1mfrb/w/1080/h/1080/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B",
-      },
-      {
-        name: "Font Awesome",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/5/5f/Font_Awesome_logomark_blue.svg",
-      },
     ],
+
+    supportingTech: ["Framer Motion (Animations)", "Font Awesome (Icons)"],
   },
   {
     name: "₿ CryptoMania",
     description:
-      "A sleek cryptocurrency explorer that brings global coin data to your fingertips. This app features smooth UI transitions, intuitive search and filtering, and a responsive modal-based details view. \n \n Key Features: \n· Browse and search cryptocurrencies from around the world. \n· View real-time pricing, trends, and historical charts. \n· Save favorite coins and revisit them anytime. \n· Switch currencies, paginate results, and explore trending data — all with ease.",
+      "A cryptocurrency explorer that allows users to browse, search, and track global coins, view real-time prices and trends, and manage favorites through a clean and responsive UI.",
     images: [cryptoMania1, cryptoMania2, cryptoMania3, cryptoMania4],
     netlify: "https://calm-shortbread-41b583.netlify.app/",
     github: "https://github.com/KestutisRuockus/cryptomania",
-    techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+
+    mainStack: [
       {
-        name: "Typescript",
-        icon: "",
-        color: "",
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+      },
+      {
+        name: "TypeScript",
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
         name: "Tailwind CSS",
-        icon: "",
-        color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-      {
-        name: "Vite",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg",
-      },
-      {
-        name: "Axios",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/d/d1/Axios_%28computer_library%29_logo.svg",
-      },
-      {
-        name: "Rest-API",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://img.icons8.com/?size=100&id=55497&format=png&color=000000",
-      },
+    ],
+
+    supportingTech: [
+      "Vite (Build Tool)",
+      "Axios (HTTP Client)",
+      "REST API (External Data)",
     ],
   },
   {
-    name: "Clothes E-Shop",
+    name: "🛍️ Clothes E-Shop",
     description:
-      "An e-commerce app for browsing a clothing catalog, with product search, filtering, shopping cart, and checkout. Data is saved to localStorage for continuity. \n\n Key Features: \n · Browse by product categories and subcategories. \n · Search and filter products. \n · Persistent shopping cart with localStorage.",
+      "A simple e-commerce application for browsing clothing products, filtering by categories, and managing a persistent shopping cart through a clean and responsive interface.",
     images: [eShop1, eShop2, eShop3, eShop4],
     netlify: "https://clothes-e-shop.netlify.app/",
     github: "https://github.com/KestutisRuockus/clothes-e-shop",
-    techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+
+    mainStack: [
       {
-        name: "Typescript",
-        icon: "",
-        color: "",
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+      },
+      {
+        name: "TypeScript",
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
         name: "Tailwind CSS",
-        icon: "",
-        color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-      {
-        name: "React Router",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactrouter/reactrouter-original.svg",
-      },
+    ],
+
+    supportingTech: [
+      "React Router (Routing)",
+      "LocalStorage (Persistent Cart)",
     ],
   },
   {
-    name: "FriendFeed",
+    name: "💬 FriendFeed",
     description:
-      "A social media app with Firebase authentication. Users can log in, create, edit, and delete posts, interact with comments, and chat with others. \n\n Key Features: \n · Firebase authentication with email/password login. \n · Create, edit, and delete posts with images. \n · Dynamic messaging system with responsive design.",
+      "A social media application that allows users to authenticate, create and manage posts, interact through comments, and communicate via a real-time messaging interface.",
     images: [
       friendFeedLogin,
       friendfeedHomePage,
@@ -230,92 +224,82 @@ export const projectsData = [
     ],
     netlify: "https://friendfeed.netlify.app/",
     github: "https://github.com/KestutisRuockus/FriendsFeed",
-    techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+
+    mainStack: [
       {
-        name: "Typescript",
-        icon: "",
-        color: "",
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+      },
+      {
+        name: "TypeScript",
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
         name: "Tailwind CSS",
-        icon: "",
-        color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-      {
-        name: "Firebase",
-        icon: "",
-        color: "",
-        imgUrl: "https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg",
-      },
-      {
-        name: "React Router",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactrouter/reactrouter-original.svg",
-      },
+    ],
+
+    supportingTech: [
+      "Firebase (Authentication & Data)",
+      "React Router (Routing)",
     ],
   },
   {
-    name: "Estate landing page",
+    name: "🏡 Estate Landing Page",
     description:
-      "A modern, responsive landing page for a real estate business. This single-page application is designed to showcase key information, highlight recent projects, and provide an easy way for potential clients to get in touch. \n\n Key Features: \n · Highlights recent projects and business offerings. \n · Clean, modern, and responsive design. \n · User-friendly contact options.",
+      "A responsive real estate landing page designed to present business services, showcase recent projects, and provide clear contact options through a clean and modern layout.",
     images: [estate1, estate2, estate3, estate4],
     netlify: "https://landing-page-real-estate.netlify.app/",
     github: "https://github.com/KestutisRuockus/real-estate",
-    techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+
+    mainStack: [
       {
-        name: "Typescript",
-        icon: "",
-        color: "",
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+      },
+      {
+        name: "TypeScript",
         imgUrl:
           "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
       },
       {
         name: "Tailwind CSS",
-        icon: "",
-        color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-      {
-        name: "Framer Motion",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://cdn.brandfetch.io/idDJv1mfrb/w/1080/h/1080/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B",
-      },
     ],
+
+    supportingTech: ["Framer Motion (Animations)"],
   },
   {
-    name: "Movies Discovery",
+    name: "🎬 Movies Discovery",
     description:
-      "An app for discovering movies using the TMDB API. Users can browse by genre, view top-rated and popular movies, and save favorites. \n\n Key Features: · Browse movies by genre and popularity. \n · Save favorite movies for later viewing. \n · Fast, dynamic content loading.",
+      "A movie discovery application that allows users to explore popular and top-rated films, browse by genre, and save favorites using data from the TMDB API.",
     images: [tmdb1, tmdb2, tmdb3, tmdb4],
     netlify: "https://tmdb-discovery.netlify.app/",
     github: "https://github.com/KestutisRuockus/TMDB",
-    techStack: [
-      { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
+
+    mainStack: [
+      {
+        name: "React",
+        icon: "fa-brands fa-react",
+        color: "text-blue-400",
+      },
       {
         name: "Tailwind CSS",
-        icon: "",
-        color: "",
         imgUrl:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-      {
-        name: "Rest-API",
-        icon: "",
-        color: "",
-        imgUrl:
-          "https://img.icons8.com/?size=100&id=55497&format=png&color=000000",
-      },
+    ],
+
+    supportingTech: [
+      "TMDB API (External Movie Data)",
+      "REST API (Data Fetching)",
     ],
   },
 ];

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "HTML",
+    "icon": "fa-brands fa-html5",
+    "color": "#D97706"
+  },
+  {
+    "name": "CSS",
+    "icon": "fa-brands fa-css3-alt",
+    "color": "#2563EB"
+  },
+  {
+    "name": "JS",
+    "icon": "fa-brands fa-js",
+    "color": "#FACC15"
+  },
+  {
+    "name": "Typescript",
+    "iconSrc": "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+    "width": 44
+  },
+  {
+    "name": "React",
+    "icon": "fa-brands fa-react",
+    "color": "#60A5FA"
+  },
+  {
+    "name": "Next.Js",
+    "iconSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s",
+    "width": 44
+  },
+  {
+    "name": "Tailwind",
+    "iconSrc": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    "width": 60
+  },
+  {
+    "name": "GitHub",
+    "icon": "fa-brands fa-github",
+    "color": "#000"
+  }
+]
