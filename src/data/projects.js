@@ -48,7 +48,7 @@ import tmdb4 from "../assets/tmdb/TMDB-4.png";
 
 export const projectsData = [
   {
-    name: "Chordly - SaaS ( In Development )",
+    name: "Chordly - SaaS",
     description:
       "Chordly is a SaaS platform that connects music teachers and students, enabling lesson booking, progress tracking, and practice management through role-based dashboards.",
     images: [chordly1, chordly2, chordly3, chordly4],
@@ -86,6 +86,9 @@ export const projectsData = [
       "Clerk (Authentication)",
       "PostgreSQL (Neon)",
       "Drizzle ORM",
+      "Uploadthing (File uploads)",
+      "Radix UI / shadcn",
+      "Sonner (Notifications)",
     ],
   },
   {
